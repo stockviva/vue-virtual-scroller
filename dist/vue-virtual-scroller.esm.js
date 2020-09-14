@@ -844,20 +844,11 @@ var __vue_render__ = function() {
               staticClass: "vue-recycle-scroller__item-view",
               class: { hover: _vm.hoverKey === view.nr.key },
               style: _vm.ready
-                ? view.item.key
-                  ? ((_obj = {}),
-                    (_obj[_vm.direction === "vertical" ? "top" : "left"] =
-                      view.position + "px"),
-                    (_obj.willChange = "unset"),
-                    _obj)
-                  : {
-                      transform:
-                        "translate" +
-                        (_vm.direction === "vertical" ? "Y" : "X") +
-                        "(" +
-                        view.position +
-                        "px)"
-                    }
+                ? ((_obj = {}),
+                  (_obj[_vm.direction === "vertical" ? "top" : "left"] =
+                    view.position + "px"),
+                  (_obj.willChange = "unset"),
+                  _obj)
                 : null,
               on: {
                 mouseenter: function($event) {
